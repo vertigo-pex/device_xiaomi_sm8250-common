@@ -15,9 +15,8 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "org.lineageos.settings.resources",
+        "org.pixelexperience.settings.resources",
         "SettingsLib",
-        "//hardware/xiaomi:vendor.xiaomi.hardware.touchfeature-V1.0-java",
     ],
 
     optimize: {

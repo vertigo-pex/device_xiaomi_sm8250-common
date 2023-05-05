@@ -28,7 +28,7 @@ public class AutoHBMThresholdPreference extends CustomSeekBarPreference {
 
     private static int mMinVal = 0;
     private static int mMaxVal = 60000;
-    private static int mDefVal = 20000;
+    private static int mDefVal = 15000;
 
     public AutoHBMThresholdPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
