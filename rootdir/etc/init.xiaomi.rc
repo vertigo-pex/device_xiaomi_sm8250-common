@@ -86,3 +86,7 @@ service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
 # Touch
 on boot
     chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    
+# Idle Mode
+on property:graphics.display.kernel_idle_timer.enabled=true
+     write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/idle_mode "@60"
