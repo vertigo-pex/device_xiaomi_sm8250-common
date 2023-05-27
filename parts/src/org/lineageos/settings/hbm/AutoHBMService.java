@@ -58,8 +58,8 @@ public class AutoHBMService extends Service {
             FileUtils.writeLine(HBM, "0xF0000");
             FileUtils.writeLine(BACKLIGHT, "2047");
         }
-
     }
+
     private boolean isCurrentlyEnabled() {
         return FileUtils.getFileValueAsBoolean(HBM, false);
     }
@@ -85,7 +85,7 @@ public class AutoHBMService extends Service {
             } else {
                 if (mAutoHBMActive) {
                     long currentTime = System.currentTimeMillis();
-                    if (currentTime - mLastTriggerTime >= timeToDisableHBM * 1000) {
+                    if (currentTime - mLastTriggerTime >= timeToDisableHBM * 1000 || lux < luxThreshold) {
                         mAutoHBMActive = false;
                         enableHBM(false);
                     }
