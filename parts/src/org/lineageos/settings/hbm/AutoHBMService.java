@@ -25,7 +25,7 @@ public class AutoHBMService extends Service {
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
     private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
 
-    private static boolean mAutoHBMActive = false;
+    private static boolean mAutoHBMActive = true;
     private ExecutorService mExecutorService;
 
     private SensorManager mSensorManager;
