@@ -14,3 +14,6 @@ vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:h
 
 # Touch Feature
 vendor.xiaomi.hardware.touchfeature::ITouchFeature                                    u:object_r:hal_touchfeature_xiaomi_hwservice:s0
+
+#Leica
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                                   u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
