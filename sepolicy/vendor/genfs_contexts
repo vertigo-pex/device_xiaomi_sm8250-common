@@ -118,3 +118,4 @@ genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup               
 genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd-secure/wakeup                                                                                  u:object_r:sysfs_wakeup:s0
+

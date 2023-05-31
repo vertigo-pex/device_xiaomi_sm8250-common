@@ -487,8 +487,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
 # Touch
+ifeq ($(BUILD_HIGHPOLLING),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi
+endif
 
 # Thermal Mi_Thermald
 PRODUCT_PROPERTY_OVERRIDES += \
